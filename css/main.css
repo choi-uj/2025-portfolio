@@ -177,11 +177,15 @@ section {
     left: 5rem;color: var(--blue);
 }
 .swiper-pagination {
-    position: absolute;
-    bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    gap: 1rem;
 }
 .swiper-pagination span {
     color: var(--blue);
+    width: 1rem;height: 1rem;
 }
 .autoplay-progress {
     position: absolute;
