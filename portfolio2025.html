@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EunJin's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="/js/index.js" defer></script>
+    
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1><a href="#">Portfolio</a></h1>
+            <nav id="gnb">
+                <ul class="dep1">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skill">skills</a></li>
+                    <li><a href="#project">project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main-visual">
+            <!-- 파도 배경 -->
+            <div id="wave-bg"></div>
+            <!-- 콘텐츠 예시 -->
+            <div class="wave-content">
+            <!-- <div class="main-round"></div> -->
+    </section>
+    <section id="visual">
+        <div class="container">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/ComfyUI_00039_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00055_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00076_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00065_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00087_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00089_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00009_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00072_.png"></div>
+                <div class="swiper-slide"><img src="/img/ComfyUI_00080_.png"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-content">
+                <img src="/img/ComfyUI_00058_.png" alt="ai-image" class="about-img">
+                <div class="about-txt">
+                    <ul class="about-t1">
+                        <li>이름</li>
+                        <li>생년월일</li>
+                        <li>위치</li>
+                        <li>이메일</li>
+                    </ul>
+                    <ul class="about-t2">
+                        <li>홍길동</li>
+                        <li>00.00.00</li>
+                        <li>서울시</li>
+                        <li>hong0101@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-content">
+                <ul class="skill-txt">
+                    <li class="skill-name"> Language
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li class="skill-name"> Frontend
+                        <ul>
+                            <li>Html5</li>
+                            <li>Css3</li>
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>Scss</li>
+                        </ul>
+                    </li>
+                    <li class="skill-name"> Backend
+                        <ul>
+                            <li>MySQL</li>
+                        </ul>
+                    </li>
+                    <li class="skill-name"> AI tool
+                        <ul>
+                            <li>ComfyUI</li>
+                        </ul>
+                    </li>
+                    <li class="skill-name"> Design
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="/img/ComfyUI_00087_.png" alt="ai-image" class="skill-img">
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <h2>Project</h2>
+            <div class="project-content">
+                <ul class="project-menu">
+                    <li><a href="#" data-target="p1">Kaist 녹색성장지속대학원 클론코딩</a></li>
+                    <li><a href="#" data-target="p2">Wolo Brothers 리디자인</a></li>
+                    <li><a href="#" data-target="p3">서울 가드닝 클럽 리디자인</a></li>
+                    <li><a href="#" data-target="p4">웹페이지용 AI 이미지 제작 project</a></li>
+                </ul>
+                <div class="project-in active" id="p1"> 
+                    <img src="/img/ComfyUI_00011_.png" alt="">
+                    <h3>KAIST 녹색성장지속가능대학원 웹사이트 클론 코딩</h3>
+                    <div class="project-link">
+                        <a href="" alt="Github">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="" alt="웹사이트">
+                            <i class="ri-global-line"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="project-txt">
+                        <div class="project-info">
+                            <div># 제작기간
+                                <span>2025.06.05 ~ 2025.06.29</span> 
+                            </div>
+                            <div># 기술 스택
+                                <span>HTML5</span>
+                                <span>CSS3 (Flexbox, Grid 포함)</span>
+                                <span>JavaScript (기초 DOM 조작, 간단한 인터랙션)</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-in" id="p2"> 
+                    <img src="/img/ComfyUI_00011_.png" alt="">
+                    <h3>Wolo Brothers 리디자인</h3>
+                    <div class="project-link">
+                        <a href="" alt="Github">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="" alt="웹사이트">
+                            <i class="ri-global-line"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="project-txt">
+                        <div class="project-info">
+                            <div># 제작기간
+                                <span>2025.06.05 ~ 2025.06.29</span> 
+                            </div>
+                            <div># 기술 스택
+                                <span>HTML5</span>
+                                <span>CSS3 (Flexbox, Grid 포함)</span>
+                                <span>JavaScript (기초 DOM 조작, 간단한 인터랙션)</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-in" id="p3"> 
+                    <img src="/img/ComfyUI_00011_.png" alt="">
+                    <h3>서울 가드닝 클럽 리디자인</h3>
+                    <div class="project-link">
+                        <a href="" alt="Github">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="" alt="웹사이트">
+                            <i class="ri-global-line"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="project-txt">
+                        <div class="project-info">
+                            <div># 제작기간
+                                <span>2025.06.05 ~ 2025.06.29</span> 
+                            </div>
+                            <div># 기술 스택
+                                <span>HTML5</span>
+                                <span>CSS3 (Flexbox, Grid 포함)</span>
+                                <span>JavaScript (기초 DOM 조작, 간단한 인터랙션)</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-in" id="p4"> 
+                    <img src="/img/ComfyUI_00011_.png" alt="">
+                    <h3>웹페이지용 AI 이미지 제작 project</h3>
+                    <div class="project-link">
+                        <a href="" alt="Github">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="" alt="웹사이트">
+                            <i class="ri-global-line"></i>
+                        </a>
+                    </div>
+                    <div class="p4-page active">
+                        <div class="project-txt">
+                            <div class="project-info">
+                                <div># 제작기간
+                                    <span>2025.06.05 ~ 2025.06.29</span> 
+                                </div>
+                                <div># 기술 스택
+                                    <span>HTML5</span>
+                                    <span>CSS3 (Flexbox, Grid 포함)</span>
+                                    <span>JavaScript (기초 DOM 조작, 간단한 인터랙션)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p4-page">
+                        <p>📸 이 프로젝트에서는 ComfyUI를 사용해 웹페이지용 AI 이미지를 생성했습니다.</p>
+                        <p>기능: 다양한 프롬프트 조합 / 이미지 자동 리사이즈 / 결과 미리보기</p>
+                    </div>
+                    <div class="p4-page">
+                        <p>🚀 향후 개선 계획</p>
+                        <ul>
+                            <li>Stable Diffusion 모델 추가</li>
+                            <li>Prompt 자동 추천 기능 구현</li>
+                            <li>이미지 업로드 기반 변형 기능</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="next-btn">
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            &copy; 2025. Choi Eun Jin. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
