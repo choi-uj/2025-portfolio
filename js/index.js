@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const menuLinks = document.querySelectorAll('.project-menu a');
 const projects = document.querySelectorAll('.project-in');
 
+
 menuLinks.forEach(link => {
 link.addEventListener('click', e => {
     e.preventDefault();
@@ -61,17 +62,27 @@ link.addEventListener('click', e => {
 });
 });
 
-const nextBtn = document.querySelector('.next-btn');
-const p4Pages = document.querySelectorAll('#p4 .p4-page');
-let currentPage = 0;
+projects.forEach(project => {
+  const nextBtn = project.querySelector('.next-btn');
+  const prevBtn = project.querySelector('.prev-btn');
 
-nextBtn.addEventListener('click', () => {
-  // 현재 페이지 숨기기
-  p4Pages[currentPage].classList.remove('active');
+  const pages = project.querySelectorAll('.page-in');
 
-  // 다음 페이지 인덱스 계산
-  currentPage = (currentPage + 1) % p4Pages.length;
+  // 첫 번째 페이지만 active
+  let currentIndex = 0;
+  pages.forEach((p, i) => p.classList.toggle('active', i === currentIndex));
 
-  // 다음 페이지 보이기
-  p4Pages[currentPage].classList.add('active');
+  function showPage(index) {
+    pages.forEach((p, i) => p.classList.toggle('active', i === index));
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % pages.length;
+    showPage(currentIndex);
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + pages.length) % pages.length;
+    showPage(currentIndex);
+  });
 });
