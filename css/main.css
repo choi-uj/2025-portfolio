@@ -44,7 +44,7 @@ h2 {
     color: var(--deepblue);font-weight: 400;
 }
 h3 {
-    font-size: 2rem;color: var(--deepblue);
+    font-size: 2.4rem;color: var(--deepblue);
 }
 .container {padding: 0 20rem;display: flex;}
 section .container {
@@ -286,12 +286,18 @@ section {
     text-align: left;width: 40%;
 }
 .project-menu li {
-    font-size: 1.6rem;line-height: 3rem;
+    font-size: 1.7rem;line-height: 4rem;
     color: var(--blue);
 }
 .project-menu li:hover {
-    font-weight: 600;
     color: var(--deepblue);
+    font-weight: 600;
+}
+.project-menu a.active {
+  color: var(--deepblue);
+  border-bottom: 2px solid var(--deepblue);
+  padding: 0.5rem 0;
+  font-weight: 600;
 }
 .project-in {
     font-size: 1.6rem;width: 60%;
