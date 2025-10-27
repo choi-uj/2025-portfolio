@@ -14,12 +14,13 @@
 }
 html, body {
     margin: 0;padding: 0;
-    height: 100%;
+    height: 100%;width: 100vw;
     scroll-behavior: smooth;
 }
 body {
     position: relative;color: #222;
     font-family: 'Wanted Sans', sans-serif;
+    overflow-x: hidden;
 }
 ul, li {
     list-style: none;
