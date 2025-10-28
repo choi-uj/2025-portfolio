@@ -3,8 +3,8 @@
 // wave
 VANTA.WAVES({
       el: "#wave-bg",
-      color: 0x025959,          // 물결 색상
-      shininess: 50,
+      color: 0x025959, // 물결 색상
+      shininess: 40,
       waveHeight: 20,
       waveSpeed: 1.2,
       zoom: 1.2
