@@ -69,7 +69,7 @@ section {
 #header {
     position: fixed;z-index: 9999;
     top: 0;left: 0;right: 0;
-    height: 10rem;width: 100vw;
+    height: 8rem;width: 100vw;
     display: flex;align-items: center;
     background: var(--white);
     border-bottom: 1px solid var(--blue);
