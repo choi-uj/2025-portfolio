@@ -1,4 +1,15 @@
 // index.js
+// curser-circle
+const cursor = document.querySelector(".cursor-circle");
+
+window.addEventListener("mousemove", (e) => {
+  gsap.to(cursor, {
+    x: e.clientX,
+    y: e.clientY,
+    duration: 0.05,
+    ease: "power2.out"
+  });
+});
 
 // wave
 VANTA.WAVES({
