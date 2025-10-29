@@ -11,6 +11,17 @@ window.addEventListener("mousemove", (e) => {
   });
 });
 
+// header
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
 // wave
 VANTA.WAVES({
       el: "#wave-bg",

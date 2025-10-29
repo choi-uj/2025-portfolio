@@ -59,7 +59,7 @@ section {
     min-height: 100vh;
     scroll-snap-align: start;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     .container {padding: 0 5rem;}
 }
 
@@ -87,6 +87,13 @@ section {
     display: flex;align-items: center;
     background: var(--white);
     border-bottom: 1px solid var(--blue);
+    
+}
+/* ✅ 스크롤 시 배경색 변화 */
+#header.scrolled {
+  background: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(5px);
+  border-bottom: none;
 }
 #header .container {
     width: 100%;
@@ -128,7 +135,7 @@ section {
     font-size: 1.8rem;
     color: var(--cream);
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     #footer .container {padding: 0 5rem 1rem 5rem;}
 }
 
@@ -165,27 +172,39 @@ section {
     transform: translateX(-50%);
     z-index: 200;
     width: 60%;height: 55%;
-    border: 5px solid var(--cream);
-    opacity: 0.7;
+    background: rgba(rgb(242, 224, 201), 1);
+    backdrop-filter: blur(5px);
+}
+.main-line::after {
+    content: "";
+    width: 99.5%;height: 100%;
+    position: absolute;
+    border: 2px solid var(--cream);
+    opacity: 0.4;
 }
 .sub-line {
     position: absolute;
-    top: 00%;left: 50%;
+    top: 0;left: 50%;
     transform: translateX(-50%);
     z-index: 200;
     width: 80%;height: 100%;
+    background: rgba(rgb(242, 224, 201), 1);
+    backdrop-filter: blur(5px);
     border: 3px solid var(--cream);
     opacity: 0.2;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     .wave-content h1 {
         top: 15%;
     }
     .main-line {
         top: 20%;
         width: 80%;height: 70%;
+    }
+    .main-line::after {
+        width: 97%;height: 97%;
         border: 10px solid var(--cream);
-        opacity: 0.4;
+        opacity: 0.2;
     }
     .sub-line {display: none;}
 }
@@ -211,8 +230,23 @@ section {
     text-align: right;
     color: var(--deepblue);
 }
-@media screen and (max-width:1024px) {
-    #about .container {padding: 0 5rem 5rem 5rem;}
+@media screen and (max-width:1080px) {
+    #about .container {padding: 0 5rem 10rem 5rem;}
+}
+@media screen and (max-width:860px) {
+    .about-content {
+        display: flex;flex-direction: column;
+        justify-content: center;align-items: center;
+        gap: 3rem;
+    }
+    .about-img {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+    }
+    .about-txt {
+        width: 90%;padding: 0;
+    }
 }
 
 /* skill */
@@ -244,10 +278,31 @@ section {
     color: var(--deepblue);font-style: normal;
 }
 .skill-img {
-    width: 50%;
+    width: 50%;object-fit: cover;
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     #skill .container {padding: 0 5rem 5rem 5rem;}
+}
+@media screen and (max-width:860px) {
+    .skill-content {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .skill-txt {
+        width: 100%;
+        gap: 2rem;
+    }
+    .skill-name {
+        width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--blue);
+    }
+    .skill-name:last-child {border-bottom: none;}
+    .skill-img {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+    }
 }
 
 /* project */
@@ -363,10 +418,24 @@ section {
     font-size: 1.6rem;font-weight: 400;
     color: var(--deepblue);
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     #project .container {padding: 0 5rem 5rem 5rem;}
 }
-
+@media screen and (max-width:860px) {
+    .project-content {
+        display: flex;flex-direction: column;
+        gap: 5rem;
+    }
+    .project-menu {
+        width: 100%;
+    }
+    .project-menu li {
+        line-height: 3rem;
+    }
+    .project-in {
+        width: 100%;
+    }
+}
 
 /* visual */
 #visual {
@@ -448,6 +517,17 @@ section {
     stroke-dasharray: 140.6;
     transform: translate(-50%, -50%) rotate(-90deg);
 }
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
     #visual .container {padding: 0 5rem 5rem 5rem;}
+}
+@media screen and (max-width:860px) {
+    .swiper-button-next {
+      right: 2rem;color: var(--blue);
+    }
+    .swiper-button-prev {
+        left: 2rem;color: var(--blue);
+    }
+    .swiper-pagination {
+        padding-bottom: 1rem;
+    }
 }
