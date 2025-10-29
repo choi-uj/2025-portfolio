@@ -22,7 +22,7 @@ body {
     font-family: 'Wanted Sans', sans-serif;
     overflow-x: hidden;
     user-select: none;
-    background: #ffffff; /* 반드시 지정 */
+    background: #ffffff;
 }
 ul, li {
     list-style: none;
@@ -74,8 +74,8 @@ section {
   border-radius: 50%;
   pointer-events: none; /* 클릭 막지 않음 */
   transform: translate(-50%, -50%);
-  background: var(--blue);
-  mix-blend-mode: difference; /* 핵심: 반전 효과 */
+  background: var(--blue); 
+  mix-blend-mode: multiply;
   transition: transform 0.15s ease-out;
 }
 

@@ -11,6 +11,7 @@ window.addEventListener("mousemove", (e) => {
   });
 });
 
+
 // header
 const header = document.getElementById('header');
 
@@ -27,9 +28,9 @@ VANTA.WAVES({
       el: "#wave-bg",
       color: 0x025959, // 물결 색상
       shininess: 40,
-      waveHeight: 20,
-      waveSpeed: 1.2,
-      zoom: 1.2
+      waveHeight: 10,
+      waveSpeed: 1,
+      zoom: 1.1
     });
 
 // Initialize Swiper
