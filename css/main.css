@@ -22,6 +22,7 @@ body {
     font-family: 'Wanted Sans', sans-serif;
     overflow-x: hidden;
     user-select: none;
+    background: #ffffff; /* 반드시 지정 */
 }
 ul, li {
     list-style: none;
