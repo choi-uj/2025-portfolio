@@ -23,15 +23,30 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// wave
-VANTA.WAVES({
-      el: "#wave-bg",
-      color: 0x025959, // 물결 색상
-      shininess: 40,
-      waveHeight: 10,
-      waveSpeed: 1,
-      zoom: 1.1
-    });
+// main-visual
+VANTA.BIRDS({
+  el: "#birds-bg",           // 효과를 적용할 요소 ID
+  mouseControls: true,       // 마우스 인터랙션
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+
+  // 🎨 컬러 및 스타일 설정
+  backgroundAlpha: 0.0,  // ✅ 추가: 캔버스 투명도
+  backgroundColor: 0x00000000, // 배경색(투명)
+  color1: 0x025959,          // 새의 주요 색상
+  color2: 0xF2E0C9,          // 보조 색상
+  birdSize: 1.3,             // 새 크기
+  wingSpan: 25.0,            // 날개 길이
+  quantity: 4.0,             // 새의 수
+  speedLimit: 4.00,          // 속도 제한
+  separation: 50.00,         // 새들 간 거리
+  alignment: 30.00,          // 비행 정렬 정도
+  cohesion: 10.00,           // 군집력 (값이 높을수록 뭉침)
+})
 
 // Initialize Swiper
 document.addEventListener("DOMContentLoaded", () => {

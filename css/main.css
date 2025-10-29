@@ -144,12 +144,17 @@ section {
     width: 100vw;height: 100vh;
     position: relative;
     overflow: hidden;
+      /* 🌈 CSS 그라데이션 배경 지정 */
+  background: radial-gradient(circle at 50% 60%, #025959 40%, #04adbf 100%);
 }
-#wave-bg {
-      width: 100%;
-      height: 100vh;
-      z-index: -1;
-    }
+#birds-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
 
 .wave-content {
     z-index: 100;
@@ -172,16 +177,17 @@ section {
     transform: translateX(-50%);
     z-index: 200;
     width: 60%;height: 55%;
-    background: rgba(rgb(242, 224, 201), 1);
+    border-radius: 0%;
     backdrop-filter: blur(5px);
+    border: 2px solid rgba(242, 224, 201, 0.3); 
 }
-.main-line::after {
+/* .main-line::after {
     content: "";
     width: 99.5%;height: 100%;
     position: absolute;
     border: 2px solid var(--cream);
     opacity: 0.4;
-}
+} */
 .sub-line {
     position: absolute;
     top: 0;left: 50%;
